@@ -1,0 +1,194 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "resourceCreate",
+                "type": "string"
+            }
+        ],
+        "name": "ResourcesCreation",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "userCreate",
+                "type": "address"
+            }
+        ],
+        "name": "UserCreation",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "userAddress",
+                "type": "address"
+            },
+            {
+                "internalType": "string",
+                "name": "role",
+                "type": "string"
+            }
+        ],
+        "name": "ChangeUserRoles",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "resourcesID",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "assetType",
+                "type": "string"
+            },
+            {
+                "internalType": "uint256",
+                "name": "sensitiveLevel",
+                "type": "uint256"
+            }
+        ],
+        "name": "CreateResources",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "userAddress",
+                "type": "address"
+            },
+            {
+                "internalType": "string",
+                "name": "role",
+                "type": "string"
+            },
+            {
+                "internalType": "uint256",
+                "name": "clearnancelevel",
+                "type": "uint256"
+            }
+        ],
+        "name": "CreateUser",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "userAddress",
+                "type": "address"
+            }
+        ],
+        "name": "DeactiveUser",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "resourcesID",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "assetType",
+                "type": "string"
+            },
+            {
+                "internalType": "uint256",
+                "name": "sensitiveLevel",
+                "type": "uint256"
+            }
+        ],
+        "name": "ModifyResources",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "admin",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "",
+                "type": "string"
+            }
+        ],
+        "name": "resources",
+        "outputs": [
+            {
+                "internalType": "string",
+                "name": "assetType",
+                "type": "string"
+            },
+            {
+                "internalType": "uint256",
+                "name": "sensitiveLevel",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "name": "users",
+        "outputs": [
+            {
+                "internalType": "string",
+                "name": "role",
+                "type": "string"
+            },
+            {
+                "internalType": "uint256",
+                "name": "clearanceLevel",
+                "type": "uint256"
+            },
+            {
+                "internalType": "bool",
+                "name": "isActive",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]
